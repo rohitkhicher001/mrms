@@ -1,0 +1,74 @@
+/* .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 5px grey;
+    background: white;
+    position: relative
+} */
+.nav{
+    margin-top: 0px;
+}
+.news{
+    margin-top: 50px;
+}
+.homepage > .button {
+    background: #1877f2;
+    border: 1px solid #1877f2;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/* CSS */
+.button-67 {
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    background: #dadae0;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -2px -2px 3px 0 rgb(168, 166, 166),2px 2px 3px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    transition: .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+  }
+  
+  .button-67:hover {
+    background: #f8f8ff;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+  }
+  
+  @media (min-width: 768px) {
+    .button-67 {
+      padding: 5px;
+    }
+  }
+        
+
