@@ -56,7 +56,7 @@ export default class Mainpage extends Component {
             "backgroundColor" : "white",
             "overflow-y":"scroll",
             "height":"50vh",
-            "border":"2px solid green",
+            
         }
         
         const card_st = {
@@ -65,7 +65,7 @@ export default class Mainpage extends Component {
             "padding":"0",
             "margin":"0",
             "text-align":"center",
-            "border":"2px solid red",
+            
         }
         
         const {items} = this.state;

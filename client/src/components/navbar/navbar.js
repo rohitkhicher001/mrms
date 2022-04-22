@@ -94,6 +94,11 @@ const Navbar = () => {
                 Documents
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contactus" exact>
+                Contact Us
+              </NavLink>
+            </li>
         </ul>
       </div>
   </nav>

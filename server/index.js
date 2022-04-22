@@ -23,6 +23,31 @@ mongoose.connect(
   }
 );
 
+const contactSchema = new mongoose.Schema({
+  name: String,
+  phone: String,
+  message: String,
+});
+
+const Contact = new mongoose.model("Contact", contactSchema);
+
+app.post("/addcontact", (req, res) => {
+  const { name, phone, message } = req.body;
+
+  const contact = new Contact({
+    name,
+
+    phone,
+   message
+  });
+  contact.save((err) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send({ message: "Succesfully sent." });
+    }
+  });
+});
 
 
 //Creating Schema
@@ -104,6 +129,16 @@ app.post("/updateprofile", (req, res) => {
     kidstb,
   kidspneumonia,
   });
+  // User.findOne((user)=>{
+  //   user.phone = phone
+  // })
+  // user.save((err) => {
+  //   if (err) {
+  //     res.send(err);
+  //   } else {
+  //     res.send({ message: "Successfully Registered, Please login now." });
+  //   }
+  // });
   profile.save((err) => {
     if (err) {
       res.send(err);
@@ -160,6 +195,7 @@ app.post("/addrecord", (req, res) => {
     prescription,
     anyeffects,
   });
+ 
   record.save((err) => {
     if (err) {
       res.send(err);

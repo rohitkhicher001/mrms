@@ -1,15 +1,6 @@
-/* .homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    width: 50vw;
-    height: 50vh;
-    border-radius: 20px;
-    box-shadow: 0 0 15px 5px grey;
-    background: white;
-    position: relative
-} */
+.homepage {
+    background: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fpng.pngtree.com%2Fthumb_back%2Ffh260%2Fback_our%2F20190621%2Fourmid%2Fpngtree-blue-fresh-light-effect-medical-symbol-molecular-chain-medical-poster-image_202377.jpg&imgrefurl=https%3A%2F%2Fpngtree.com%2Ffree-png-vectors%2Fmedical-background&tbnid=F6-irDuM41Fs3M&vet=12ahUKEwiOlOLm1aX3AhVn_jgGHVTWCvQQMyglegUIARCZAg..i&docid=rwbJmnQJYztwrM&w=555&h=260&q=background%20png%20medical&ved=2ahUKEwiOlOLm1aX3AhVn_jgGHVTWCvQQMyglegUIARCZAg");
+}
 .nav{
     margin-top: 0px;
 }

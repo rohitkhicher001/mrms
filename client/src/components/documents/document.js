@@ -15,6 +15,8 @@ const navigate = useNavigate()
     const result = await createItem(item);
 
     setItems([...items, result]);
+    navigate("/profile")
+
   }
 
   useEffect(() => {
@@ -22,38 +24,44 @@ const navigate = useNavigate()
       const result = await getItems();
       console.log('fetch data;m', result)
       setItems(result)
+      
     }
     fetchData()
+    
   }, [])
+  
   return (
     <div className="document">
         <Navbar/>
       {/* <pre>{JSON.stringify(item, null, '\t')}</pre> */}
-      <form action="" onSubmit={onSubmitHandler}>
+      <div className="content">
+      <form className=" m-4" action="" onSubmit={onSubmitHandler}>
         <input type="text" className="input-field" placeholder="Title of document"
           onChange={e => setItem({ ...item, title: e.target.value })}
         />
         <FileBase64
+        
           type="file"
           multiple={false}
           onDone={({ base64 }) => setItem({ ...item, image: base64 })}
         />
-        <div className="right-align">
+        <div>
         {/* <button className="btn">submit</button> */}
-        <div className="button-67" >Add Document</div>
+        <button className="button-67" >Add Document</button>
 
         </div>
       </form>
+<div className='cardss'>
       {items?.map(item => (
-        <div className="card" key={item._id}>
-          <div className="card-image waves-effect waves-block waves-light">
-            <img className="activator" alt = "someImage" style={{ width: '50%', height: "auto" }} src={item.image} />
-          </div>
-          <div className="card-content">
-            <span className="card-title activator grey-text text-darken-4">{item.title}</span>
-          </div>
+        <div className="cardd" key={item._id}>
+            <h2 className="cardd-title ">{item.title}</h2>
+          
+            <img className="" alt = "someImage" style={{ width: 'auto', height: "auto" }} src={item.image} />
+          
         </div>
       ))}
+      </div>
+</div>
     </div>
   );
 }

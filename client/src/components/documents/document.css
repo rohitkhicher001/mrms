@@ -1,5 +1,13 @@
+.content
+{
+  background-color: #dee9ff;
+
+  height: 100%;
+  padding-bottom: 100px;
+
+}
 .button-67 {
-    align-items: center;
+    /* align-items: center; */
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -17,7 +25,7 @@
     font-size: 1rem;
     justify-content: center;
     line-height: 1.5rem;
-    padding: 10px;
+    padding: 20px;
     position: relative;
     text-align: left;
     transition: .2s;
@@ -25,7 +33,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: pre;
-    width: 100px;
+    width: 200px;
     word-break: normal;
     word-spacing: normal;
   }
@@ -38,5 +46,81 @@
   @media (min-width: 768px) {
     .button-67 {
       padding: 10px;
+      /* padding-left: 30px;
+      padding-right: 30px; */
+
     }
   }
+
+  input {
+    border-radius: 8px;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: #1d2129;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 50%;
+    font-size: 1rem;
+}
+
+
+
+
+
+.cardss {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardd {
+  margin: 40px;
+  position: relative;
+  max-width: 250px;
+  max-height: 350px;
+  box-shadow: 0 40px 60px -6px black;
+}
+
+.cardd-title {
+  display: block;
+  text-align: center;
+  color: #fff;
+  background-color: #6184a8;
+  padding: 2%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.cardd img {
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.cardd-desc {
+  display: block;
+  font-size: 1.2rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: white;
+  overflow-y: scroll;
+  transition: 0.8s ease;
+}
+
+.cardd:hover .cardd-desc {
+  opacity: 1;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}

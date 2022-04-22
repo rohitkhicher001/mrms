@@ -13,6 +13,7 @@ import Addrecord from './components/addrecord/addrecord';
 import Document from './components/documents/document';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Contactus from './components/contactus/contactus';
 
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
            <Route path="/updateprofile" element={<Updateprofile />}/>
            <Route path="/addrecord" element={<Addrecord />}/>
            <Route path="/document" element={<Document />}/>
+           <Route path="/contactus" element={<Contactus />}/>
+
         </Routes>
       </Router>
     </div>

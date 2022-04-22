@@ -8,4 +8,9 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    
+}
+
+.aboutpage{
+    padding: 1rem 1rem;
 }
